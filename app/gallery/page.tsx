@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 
 const galleryItems = [
   {
-    src: "https://images.unsplash.com/photo-1562259929-b4e1fd3aef09?w=900&auto=format&fit=crop&q=80",
+    src: "https://images.unsplash.com/photo-1574359411659-15573a27fd0c?w=900&auto=format&fit=crop&q=80",
     alt: "Exterior house painting, painter on ladder",
     label: "Exterior Repaint",
     w: 900,

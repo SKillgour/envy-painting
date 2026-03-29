@@ -1,0 +1,17 @@
+:root {
+  --color-primary: #1a2c3d;
+  --color-accent: #e8791a;
+  --color-accent-hover: #c96412;
+  --color-bg: #f8f7f4;
+  --color-surface: #eeeae3;
+  --color-dark-surface: #1a2c3d;
+  --color-text: #1a2c3d;
+  --color-text-muted: #657080;
+  --color-text-on-dark: #f4f0e8;
+  --font-heading: 'Montserrat', sans-serif;
+  --font-body: 'Source Sans 3', sans-serif;
+  --radius: 4px;
+  --radius-lg: 8px;
+  --transition: 0.25s ease;
+  --container: 1200px;
+}

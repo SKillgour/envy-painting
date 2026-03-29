@@ -8,15 +8,15 @@ const services = [
     title: "Interior Painting",
     desc: "Clean walls, feature colours, and a finish that holds up. Every room treated with care.",
     photo:
-      "https://images.unsplash.com/photo-1671681739893-e8d027788284?w=800&auto=format&fit=crop&q=75",
-    alt: "Painter applying roller to interior wall",
+      "https://images.unsplash.com/photo-1688372199140-cade7ae820fe?w=800&auto=format&fit=crop&q=75",
+    alt: "Painter in red overalls applying roller to interior wall",
   },
   {
     title: "Exterior Painting",
     desc: "Weatherboard, plaster, roofs, and fencing. Proper prep means the paint lasts.",
     photo:
-      "https://images.unsplash.com/photo-1452864982845-a252432b5d73?w=800&auto=format&fit=crop&q=75",
-    alt: "Tradesman painting the exterior of a wooden house",
+      "https://images.unsplash.com/photo-1742900280864-bcc27353ceba?w=800&auto=format&fit=crop&q=75",
+    alt: "Painter on ladder applying paint to house exterior",
   },
   {
     title: "Commercial Painting",
@@ -111,8 +111,8 @@ export default function Home() {
 
             <div className="ep-why-image ep-reveal">
               <Image
-                src="https://images.unsplash.com/photo-1488117382278-329ccc22eecb?w=900&auto=format&fit=crop&q=80"
-                alt="Professional painter applying brush detail to house fascia"
+                src="https://images.unsplash.com/photo-1742900280864-bcc27353ceba?w=900&auto=format&fit=crop&q=80"
+                alt="Painter on ladder working on house exterior with paint bucket"
                 width={900}
                 height={1125}
                 unoptimized

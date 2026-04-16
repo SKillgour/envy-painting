@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import EPHeader from "@/components/EPHeader";
 import EPFooter from "@/components/EPFooter";
+import EPIntro from "@/components/EPIntro";
 
 export const metadata: Metadata = {
   title: "Envy Painting Ltd | Palmerston North Painters",
@@ -32,6 +33,7 @@ export default function RootLayout({
         />
       </head>
       <body>
+        <EPIntro />
         <EPHeader />
         <main>{children}</main>
         <EPFooter />

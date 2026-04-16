@@ -25,9 +25,6 @@ export default function EPFooter() {
                 <Link href="/services">Services</Link>
               </li>
               <li>
-                <Link href="/gallery">Gallery</Link>
-              </li>
-              <li>
                 <Link href="/contact">Contact</Link>
               </li>
             </ul>
@@ -106,10 +103,11 @@ export default function EPFooter() {
             reserved.
           </span>
           <span className="ep-footer-location">Palmerston North, NZ</span>
+          <a href="https://insightly.nz" target="_blank" rel="noopener noreferrer" className="ep-footer-credit">
+            Website by Insightly
+          </a>
         </div>
       </div>
-      <style>{`.footer-credit { text-align: center; font-size: 0.68rem; opacity: 0.35; margin-top: 1.5rem; padding-bottom: 0.75rem; letter-spacing: 0.02em; } .footer-credit a { color: inherit; text-decoration: none; } .footer-credit a:hover { opacity: 0.7; }`}</style>
-      <p className="footer-credit">Website by <a href="https://insightly.nz" target="_blank" rel="noopener noreferrer">Insightly</a></p>
     </footer>
   );
 }

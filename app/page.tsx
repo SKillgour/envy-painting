@@ -6,52 +6,76 @@ import EPScrollAnimations from "@/components/EPScrollAnimations";
 const services = [
   {
     title: "Interior Painting",
-    desc: "Clean walls, feature colours, and a finish that holds up. Every room treated with care.",
-    photo:
-      "https://images.unsplash.com/photo-1688372199140-cade7ae820fe?w=800&auto=format&fit=crop&q=75",
-    alt: "Painter in red overalls applying roller to interior wall",
+    desc: "Clean walls, feature colours, and a finish that holds up. Every room treated with care from prep through to the final coat.",
+    photo: "/before-after/515502789_775304408349802_5229495962067817760_n.jpg",
+    alt: "Renovated NZ living room with freshly painted walls and polished timber floors",
+    unoptimized: false,
   },
   {
     title: "Exterior Painting",
-    desc: "Weatherboard, plaster, roofs, and fencing. Proper prep means the paint lasts.",
-    photo:
-      "https://images.unsplash.com/photo-1742900280864-bcc27353ceba?w=800&auto=format&fit=crop&q=75",
-    alt: "Painter on ladder applying paint to house exterior",
+    desc: "Weatherboard, plaster, roofs, and fencing across Palmerston North. Proper surface prep means the paint lasts.",
+    photo: "/before-after/515493396_775304301683146_6642859008835435030_n.jpg",
+    alt: "Freshly painted grey weatherboard NZ bungalow after full exterior repaint",
+    unoptimized: false,
   },
   {
     title: "Commercial Painting",
-    desc: "From offices to lodges and apartment blocks. Large-scale repaints done efficiently.",
-    photo:
-      "https://images.unsplash.com/photo-1759406066673-f76869a4e6db?w=800&auto=format&fit=crop&q=75",
-    alt: "Painter working on the exterior of a brick commercial building",
+    desc: "From offices to lodges and apartment blocks. Large-scale repaints managed start to finish with minimum disruption.",
+    photo: "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=800&auto=format&fit=crop&q=75",
+    alt: "Modern multi-storey apartment block exterior under clear sky",
+    unoptimized: true,
   },
   {
     title: "Feature Walls",
-    desc: "A single bold wall can transform a room. We help you choose the right colour and nail the execution.",
-    photo:
-      "https://images.unsplash.com/photo-1688372198189-de6a51777a81?w=800&auto=format&fit=crop&q=75",
-    alt: "Painter rolling a bold yellow feature wall",
+    desc: "A single bold wall transforms a room. We help pick the right colour and execute it with clean edges and no mess.",
+    photo: "https://images.unsplash.com/photo-1600566752355-35792bedcfea?w=800&auto=format&fit=crop&q=75",
+    alt: "Stunning dark charcoal designer bathroom with bold painted walls and freestanding bath",
+    unoptimized: true,
   },
 ];
 
 const testimonials = [
   {
-    text: "Nathan was punctual, tidy, and the finish is immaculate. He painted our entire interior in three days and left the place spotless. Wouldn't hesitate to use Envy Painting again.",
-    name: "Sarah M.",
+    text: "Nathan painted our house before we put it on the market. He did an awesome job and we got him to do a whole lot extra. Nothing was a problem and he gave great advice on how best to make the house look great. Highly recommended.",
+    name: "Warwick Dunn",
+    initial: "W",
+    note: "via Facebook",
+  },
+  {
+    text: "Awesome work completed by Nathan who painted my full house exterior to a super high standard and in a timely manner. Great guy to deal with and just gets stuck into it. Would highly recommend to anyone needing paint work done.",
+    name: "Kevin Pretorious",
+    initial: "K",
+    note: "via Facebook",
+  },
+  {
+    text: "I hired Nathan at Envy Painting for my house exterior, and he did an outstanding job! He was professional, timely, and paid great attention to detail. The finish looks fantastic! Highly recommend their services!",
+    name: "Luke Nielsen",
+    initial: "L",
+    note: "via Facebook",
+  },
+  {
+    text: "Top bloke. Gets the job done with no fuss and makes sure all the little details are taken care of. If you need the work done, get Naithan on the job.",
+    name: "Simon Swain",
     initial: "S",
-    note: "Palmerston North,via Facebook",
+    note: "via Facebook",
   },
   {
-    text: "We had Nathan repaint the exterior of our weatherboard home. He power-washed, filled every crack, primed, and applied two coats. The house looks brand new. Highly recommend.",
-    name: "Craig T.",
-    initial: "C",
-    note: "Palmerston North,via Facebook",
-  },
-  {
-    text: "Used Envy Painting for a commercial job on our rental units. Nathan was professional, communicated throughout, and came in on budget. The kind of tradie you actually want to call back.",
-    name: "Donna W.",
+    text: "I have worked alongside Nathan a couple of times, and his workmanship is very good. He takes pride in his work, is reliable, honest and professional.",
+    name: "Dave Goodwin",
     initial: "D",
-    note: "Manawatu,via Facebook",
+    note: "via Facebook",
+  },
+  {
+    text: "Nathan is an absolute legend. Professional and tidy, quick and efficient. Will be my go to painter for future reno work. 10/10 would recommend.",
+    name: "Paige March",
+    initial: "P",
+    note: "via Facebook",
+  },
+  {
+    text: "Naithan is friendly and professional, and is a real pleasure to work with. He was proactive and always kept us in the loop. He is efficient with great attention to detail and did excellent work on the bathroom, hall, dining, and exterior areas of our home. Highly recommended.",
+    name: "Kezia Page-Sinclair",
+    initial: "K",
+    note: "via Facebook",
   },
 ];
 
@@ -71,8 +95,8 @@ export default function Home() {
             <span className="ep-stat-label">Recommend</span>
           </div>
           <div className="ep-stat-item">
-            <span className="ep-stat-number">7+</span>
-            <span className="ep-stat-label">Reviews</span>
+            <span className="ep-stat-number">7</span>
+            <span className="ep-stat-label">Facebook Reviews</span>
           </div>
           <div className="ep-stat-item">
             <span className="ep-stat-number">Res + Com</span>
@@ -88,11 +112,11 @@ export default function Home() {
             <div>
               <span className="ep-section-label ep-reveal">Why Envy</span>
               <h2 className="ep-why-heading ep-reveal">
-                Painting done properly,not just quickly.
+                Painting done properly, not just quickly.
               </h2>
               <p className="ep-why-body ep-reveal">
                 Nathan and the Envy Painting team bring care and craft to every
-                job,whether it is a single room repaint or a 10-unit
+                job, whether it is a single room repaint or a 10-unit
                 commercial repaint like Braxmere Lodge in Turangi. You get
                 honest pricing, real communication, and a finish worth showing
                 off.
@@ -111,8 +135,8 @@ export default function Home() {
 
             <div className="ep-why-image ep-reveal">
               <Image
-                src="https://images.unsplash.com/photo-1742900280864-bcc27353ceba?w=900&auto=format&fit=crop&q=80"
-                alt="Painter on ladder working on house exterior with paint bucket"
+                src="https://plus.unsplash.com/premium_photo-1676395664341-2cbbb9c7ea3e?w=900&auto=format&fit=crop&q=80"
+                alt="Freshly painted white NZ bungalow with dark roof under clear sky"
                 width={900}
                 height={1125}
                 unoptimized
@@ -143,7 +167,7 @@ export default function Home() {
                     alt={svc.alt}
                     width={800}
                     height={450}
-                    unoptimized
+                    unoptimized={svc.unoptimized}
                   />
                 </div>
                 <div className="ep-service-card-body">
@@ -161,7 +185,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Project Spotlight,Braxmere Lodge */}
+      {/* Project Spotlight: Braxmere Lodge */}
       <section className="ep-spotlight">
         <div className="ep-spotlight-bg-text" aria-hidden="true">
           BRAXMERE
@@ -178,7 +202,7 @@ export default function Home() {
               <p className="ep-spotlight-body ep-reveal">
                 Braxmere Lodge in Turangi needed a full repaint across 10
                 individual units. Nathan managed the project from start to
-                finish,surface assessment, prep, prime, and two-coat finish
+                finish: surface assessment, prep, prime, and two-coat finish
                 on every unit. The job was completed on schedule with zero
                 disruption to lodge guests.
               </p>
@@ -189,7 +213,7 @@ export default function Home() {
                 </div>
                 <div className="ep-spotlight-meta-item">
                   <strong>Scope:</strong>
-                  <span>Full exterior repaint, 10 units</span>
+                  <span>Full interior repaint, 10 units</span>
                 </div>
                 <div className="ep-spotlight-meta-item">
                   <strong>Type:</strong>
@@ -201,14 +225,47 @@ export default function Home() {
               </Link>
             </div>
 
-            <div className="ep-spotlight-image ep-reveal">
-              <Image
-                src="https://images.unsplash.com/photo-1513694203232-719a280e022f?w=900&auto=format&fit=crop&q=80"
-                alt="Professionally painted commercial lodge exterior"
-                width={900}
-                height={675}
-                unoptimized
-              />
+            <div className="ep-braxmere-collage ep-reveal">
+              <div className="ep-braxmere-img ep-braxmere-img--main">
+                <Image
+                  src="/braxmere/515435924_775310791682497_3820847576296674587_n.jpg"
+                  alt="Freshly painted open-plan living area at Braxmere Lodge"
+                  width={900}
+                  height={1200}
+                />
+              </div>
+              <div className="ep-braxmere-img">
+                <Image
+                  src="/braxmere/524696793_775310888349154_3154394564429869709_n.jpg"
+                  alt="Braxmere Lodge bedroom with grey feature wall and lake view"
+                  width={600}
+                  height={400}
+                />
+              </div>
+              <div className="ep-braxmere-img">
+                <Image
+                  src="/braxmere/515506476_775310825015827_3155391436336988942_n.jpg"
+                  alt="Braxmere Lodge ensuite with freshly painted white walls and modern fittings"
+                  width={600}
+                  height={400}
+                />
+              </div>
+              <div className="ep-braxmere-img">
+                <Image
+                  src="/braxmere/515439197_775310855015824_5618884197562443597_n.jpg"
+                  alt="Braxmere Lodge bathroom showing clean white painted finish"
+                  width={600}
+                  height={400}
+                />
+              </div>
+              <div className="ep-braxmere-img ep-braxmere-img--lower">
+                <Image
+                  src="/braxmere/braxmere-bedroom-b.jpg"
+                  alt="Braxmere Lodge bedroom detail with painted panelled wall"
+                  width={600}
+                  height={400}
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -219,7 +276,7 @@ export default function Home() {
         <div className="container">
           <span className="ep-section-label ep-reveal">What Clients Say</span>
           <h2 className="ep-services-heading ep-reveal ep-testimonials-heading">
-            100% recommend on Facebook.
+            7 real Facebook recommendations.
           </h2>
           <div className="ep-testimonials-grid">
             {testimonials.map((t) => (

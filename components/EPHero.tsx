@@ -97,18 +97,17 @@ export default function EPHero() {
     };
   }, []);
 
-  const headingText = "Fresh Coat. Better Home.";
+  const headingText = "Palmerston North's Painters.";
   const words = headingText.split(" ");
 
   return (
     <section className="ep-hero">
       <div className="ep-hero-bg">
         <Image
-          src="https://images.unsplash.com/photo-1574359411659-15573a27fd0c?w=1800&auto=format&fit=crop&q=80"
-          alt="Painter on ladder working on exterior house painting"
+          src="/Hero.jpg"
+          alt="Modern dark-clad New Zealand home painted by Envy Painting"
           fill
           priority
-          unoptimized
           sizes="100vw"
         />
       </div>
@@ -129,15 +128,12 @@ export default function EPHero() {
           </h1>
 
           <p ref={subRef} className="ep-hero-sub">
-            Interior and exterior painting done right across Palmerston North.
+            Residential renovations, exterior repaints, and commercial jobs done properly across Manawatu.
           </p>
 
           <div ref={ctasRef} className="ep-hero-ctas">
             <Link href="/contact" className="ep-btn-primary">
               Get a Free Quote
-            </Link>
-            <Link href="/gallery" className="ep-btn-ghost">
-              See Our Work
             </Link>
           </div>
 
